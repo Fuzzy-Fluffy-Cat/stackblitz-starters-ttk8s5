@@ -1,0 +1,25 @@
+.view-selector {
+    width: 99vw;
+    height: 10vh;
+    z-index: 0;
+    margin: none;
+    padding: none;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    /* border-bottom: 1px solid #cccccc; */
+
+    /* border-left: 1px solid red;
+    border-right: 1px solid red; */
+}
+
+.view-choice {
+    margin-right: 1rem;
+    height: 50%;
+    
+    display: flex;
+    align-items: center;
+}

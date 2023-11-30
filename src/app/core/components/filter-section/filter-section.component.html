@@ -1,0 +1,78 @@
+<ng-container>
+    <div id="filter-section">
+        <div class="filter-drop-down-container">
+            <!-- Idle -->
+            <ng-template [ngIf]="1">
+                <div class="filter-drop-down" id="filter-by">
+                    <!-- Only one <p> element here. Value inside will be variable -->
+                    <!-- {{filterType}} -->
+                    <p *ngIf="1">Region of the World</p>
+                    <p *ngIf="0">Language Used</p>
+                    <p *ngIf="0">Age Group</p>
+                    <p *ngIf="0">Member Size</p>
+                </div>
+            </ng-template>
+
+            <!-- Toggled -->
+            <ng-template [ngIf]="0">
+                <div class="filter-drop-down-toggled" id="filter-by">
+                    <div>Marginalized Sector</div>
+                    <div>Type of Activity</div>
+                    <div>Region of the World</div>
+                    <div>Language Used</div>
+                    <div>Age Group</div>
+                    <div>Group Type</div>
+                    <div>Member Size</div>
+                </div>
+            </ng-template>
+
+        </div>
+        <div class="choice-container" id="filter-type">
+            <!-- Region -->
+            <ng-template [ngIf]="1">
+                <div (click)="onClick()">Asia-Pacific</div>
+                <div (click)="onClick()">Europe</div>
+                <div (click)="onClick()">Latin America</div>
+                <div (click)="onClick()">North America</div>
+            </ng-template>
+
+            <!-- Language -->
+            <ng-template [ngIf]="0">
+                <div (click)="onClick()">English</div>
+                <div (click)="onClick()">French</div>
+                <div (click)="onClick()">Italian</div>
+                <div (click)="onClick()">Spanish</div>
+                <div (click)="onClick()">Portuguese</div>
+                <div (click)="onClick()">German</div>
+                <div (click)="onClick()">Filipino</div>
+                <div (click)="onClick()">Japanese</div>
+                <div (click)="onClick()">Mandarin</div>
+            </ng-template>
+
+            <!-- Age Group -->
+            <ng-template [ngIf]="0">
+                <div (click)="onClick()">Children</div>
+                <div (click)="onClick()"></div>
+                <div (click)="onClick()">Indigenous People</div>
+                <div (click)="onClick()">Poor</div>
+                <div (click)="onClick()">Out of School</div>
+                <div (click)="onClick()">Orphans</div>
+                <div (click)="onClick()">PWD</div>
+                <div (click)="onClick()">LGBTQIA+</div>
+                <div (click)="onClick()">Mentally Challenged</div>
+                <div (click)="onClick()">Broken</div>
+                <div (click)="onClick()">Unemployed</div>
+                <div (click)="onClick()">Rehabilitees</div>
+            </ng-template>
+
+            <!-- Member Size -->
+            <ng-template [ngIf]="0">
+                <div (click)="onClick()">5-10</div>
+                <div (click)="onClick()">10-50</div>
+                <div (click)="onClick()">50-100</div>
+                <div (click)="onClick()">100-1000</div>
+                <div (click)="onClick()">1000+</div>
+            </ng-template>
+        </div>
+    </div>
+</ng-container>

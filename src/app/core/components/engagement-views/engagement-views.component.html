@@ -1,0 +1,60 @@
+<div class="engagement-views">
+  <view-selector
+    (changeViewEvent)="(event[changeView])"
+    (changeGraphEvent)="[event](changeGraph)"
+  ></view-selector>
+
+  <div class="view-container">
+    <!-- World Regions Distribution -->
+    <ng-container *ngIf="viewNum == 1">
+      <ng-template [ngIf]="graphNum == 1">
+        <pie-chart></pie-chart>
+      </ng-template>
+      <ng-template [ngIf]="graphNum == 2">
+        <bar-graph></bar-graph>
+      </ng-template>
+    </ng-container>
+
+    <!-- Marginalized Sectors Distribution -->
+    <ng-container *ngIf="viewNum == 2">
+      <ng-template [ngIf]="graphNum == 1">
+        <pie-chart></pie-chart>
+      </ng-template>
+      <ng-template [ngIf]="graphNum == 2">
+        <bar-graph></bar-graph>
+      </ng-template>
+    </ng-container>
+
+    <!-- Curricular Involvement Distribution -->
+    <ng-container *ngIf="viewNum == 3">
+      <ng-template [ngIf]="graphNum == 1">
+        <pie-chart></pie-chart>
+      </ng-template>
+      <ng-template [ngIf]="graphNum == 2">
+        <bar-graph></bar-graph>
+      </ng-template>
+    </ng-container>
+
+    <!-- Member Types Distribution -->
+    <ng-container *ngIf="viewNum == 4">
+      <ng-template [ngIf]="graphNum == 1">
+        <pie-chart></pie-chart>
+      </ng-template>
+      <ng-template [ngIf]="graphNum == 2">
+        <bar-graph></bar-graph>
+      </ng-template>
+    </ng-container>
+
+    <!-- Engagement Types Distribution -->
+    <ng-container *ngIf="viewNum == 5">
+      <ng-template [ngIf]="graphNum == 1">
+        <pie-chart></pie-chart>
+      </ng-template>
+      <ng-template [ngIf]="graphNum == 2">
+        <bar-graph></bar-graph>
+      </ng-template>
+    </ng-container>
+  </div>
+
+  <!-- filter-section></filter-section  -->
+</div>

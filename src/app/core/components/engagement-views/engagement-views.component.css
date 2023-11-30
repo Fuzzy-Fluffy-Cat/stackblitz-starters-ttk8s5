@@ -1,0 +1,15 @@
+.engagement-views {
+    width: 100vw;
+    min-height: 90vh;
+    
+    border-top: 1px solid black;
+    /* border-bottom: 1px solid black; */
+}
+
+.view-container {
+    width: 100%;
+    min-height: 70vh;
+
+    border-top: 1px solid #777777;
+    border-bottom: 1px solid #777777;
+}
